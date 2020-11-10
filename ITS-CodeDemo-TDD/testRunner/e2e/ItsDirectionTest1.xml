@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Please make sure it is http NOT https -->
+
+
+<suite name="ITS-CodeDemo-TDD" parallel="none">
+	<test name="e2e Test">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="test.e2e.ItsDirectionTest1" />
+		</classes>
+	</test>
+
+
+	<!-- Test listener to be included in the future -->
+	<listeners>
+		<listener class-name="utilities.reportRelated.TestListener" />
+	</listeners>
+
+
+</suite>
