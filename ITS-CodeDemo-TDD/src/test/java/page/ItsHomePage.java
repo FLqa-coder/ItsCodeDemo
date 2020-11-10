@@ -34,12 +34,6 @@ public class ItsHomePage extends PageBase{
 		logger.createNode("User clicks on the Directions button");
 		directions.click();
 		
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		Log4jManager.info("User clicks on the Directions button");
 		
